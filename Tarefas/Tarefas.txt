@@ -8,4 +8,4 @@ Mudar a descrição do quem somos do OQTCG
 Adicionar mais parceiros 
 Adicionar mais serviços
 Inserir nome as imagens do portfolio OQTCG
-
+Justificar e centralizar os Serviços
