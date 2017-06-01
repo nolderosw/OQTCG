@@ -20,8 +20,8 @@ var contentTypes = {
 }
 
 
-http.createServer(function (pedido, resposta) {
-	var caminho = url.parse(pedido.url).pathname;
+http.createServer(function (request, response) {
+	var caminho = url.parse(request.url).pathname;
 
 	if (caminho==='/') {
 		var ficheiro = path.join(__dirname, 'public', caminho, 'index.html');
@@ -32,11 +32,11 @@ http.createServer(function (pedido, resposta) {
 
 	fs.readFile(ficheiro, function (erro, dados) {
   	if (erro) {
-    	resposta.writeHead(404);
-    	resposta.end();
+    	response.writeHead(404);
+    	response.end();
   	} else {
     	var extensao = path.extname(ficheiro).slice(1);
-    	resposta.end(dados);
+    	response.end(dados);
   	}
 });
 
