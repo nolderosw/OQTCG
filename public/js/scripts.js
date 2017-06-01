@@ -110,7 +110,7 @@
 		
         $(window).load(function(){
         $(".typing").typed({
-            strings: ["Somos conhecidos como o Guia Gastronômico da cidade."],    /* You can change the home section typing text from
+            strings: ["Somos conhecidos como", "Guia Gastronômico da cidade."],    /* You can change the home section typing text from
 	                                                                                            here and do not use "&" use "and" */
             typeSpeed: 50
           });
