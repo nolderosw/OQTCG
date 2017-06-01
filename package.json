@@ -1,15 +1,27 @@
 {
   "name": "oqtcg",
-  "version": "0.0.1",
-  "private": true,
+  "version": "1.0.0",
+  "description": "servidor para o site do o que tem em cg",
+  "main": "app.js",
   "scripts": {
-  "start": "node server.js"
-},
-
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nolderosw/OQTCG.git"
+  },
+  "keywords": [
+    "oqtcg",
+    "wesley",
+    "azevedo"
+  ],
+  "author": "Wesley Azevedo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nolderosw/OQTCG/issues"
+  },
+  "homepage": "https://github.com/nolderosw/OQTCG#readme",
   "dependencies": {
-},
-   "engines": {
-     "node": "7.5.0",
-     "npm": "4.1.2"
-   }
+    "express": "^4.15.3"
+  }
 }

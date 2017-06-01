@@ -45,3 +45,32 @@ http.createServer(function (request, response) {
   console.log('porta:'+port);
 });
 
+
+//servico email
+
+/*
+// Enviando e-mails usando o Node.js e o famoso nodemailer
+var nodemailer = require('nodemailer');
+
+// Vamos criar a conta que irá mandar os e-mails
+var conta = nodemailer.createTransport({
+    service: 'Gmail', // Existem outros services, você pode procurar
+                      // na documentação do nodemailer como utilizar
+                      // os outros serviços
+    auth: {
+        user: 'wesley150wow@gmail.com', // Seu usuário no Gmail
+        pass: '150051147' // A senha da sua conta no Gmail :-)
+    }
+});
+
+conta.sendMail({
+    from: 'Wesley Azevedo <wesley150wow@gmail.com>', // Quem está mandando
+    to: 'Wesley Azevedo <wesley150wow@gmail.com>', // Para quem o e-mail deve chegar
+    subject: 'Estou testando seu gist', // O assunto
+    html: '<strong>Oi Alan!</strong><p>Estou testando seu gist para enviar e-mails, amo você!</p>', // O HTMl do nosso e-mail
+}, function(err){
+    if(err)
+        throw err;
+
+    console.log('E-mail enviado!');
+}); */
